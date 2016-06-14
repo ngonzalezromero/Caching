@@ -14,24 +14,21 @@
   },
   "buildOptions": {
     "warningsAsErrors": true,
-    "keyFile": "../../tools/Key.snk",
     "nowarn": [
       "CS1591"
-    ],
-    "xmlDoc": true
+    ]
   },
   "dependencies": {
     "Microsoft.Extensions.Caching.Abstractions": "1.0.0-*",
     "Microsoft.Extensions.Options": "1.0.0-*",
-    "StackExchange.Redis.StrongName": "1.0.333"
+    "StackExchange.Redis.StrongName": "1.1.604-alpha"
   },
   "frameworks": {
-    "net451": {
-      "frameworkAssemblies": {
-        "System.Runtime": {
-          "type": "build"
-        }
-      }
-    }
+    "netcoreapp1.0": {
+      "imports": [
+        "dnxcore50"
+      ]
+    },
+    "net451": {}
   }
 }
